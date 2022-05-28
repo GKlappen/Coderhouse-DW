@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Art 🎨</title>
+    <link rel="stylesheet" href="./contacto.css">
+    <link rel="shortcut icon" href="./imagenes/favicon_32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="contenedorPadre">
+  <div class="contenedorHijo header">
+      <div class="contenedorHijo header">
+          <div class="contenedor">
+              <img src="./imagenes/Header_back.jpg" alt="Fondo imagen"/>
+          </div>
+      </div>
+  </div>
+  <div class="contenedorHijo navbar">
+      <nav class="navegacion">
+          <ul class="menu">
+              <li><a href="./Index.html">Inicio</a></li>
+              <li><a href="./Historia.html">Historia</a></li>
+              <li><a href="./Nosotros.html">Nosotros</a></li>
+              <li><a href="./Galeria.html">Galería</a></li>
+              <li><a href="./Contacto.html">Contacto</a></li>
+              <li><a href="./Shop.html">Shop</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div class="contenedorHijo main">
+      <article>
+          <div class="titulo">        
+          Contacto
+          </div class="centrado">
+              <div>
+                <div class="contact_form">
+                  <div class="formulario">      
+                    <h1>
+                      Formulario de contacto
+                    </h1>
+                    <br>
+                      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                        <form action="submeter-formulario.php" method="post">    
+                            <br>
+                            <p>Definir Género</p>
+                            <form class="genero">
+                              <div>Hombre</div>
+                              <input type="radio" name="sexo" value="hombre"/>
+                              <div>Mujer</div>
+                              <input type="radio" name="sexo" value="Mujer"/>
+                              <div>Otros</div>
+                              <input type="radio" name="sexo" value="Otros"/>
+                            </form>   
+                              <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                  <span class="obligatorio">*</span>
+                                </label>
+                                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                              </p>
+                              <p>
+                                <label for="email" class="colocar_email">Email
+                                  <span class="obligatorio">*</span>
+                                </label>
+                                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                              </p>
+                              <p>
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                  <span class="obligatorio">*</span>
+                                <form>
+                                  <select name="Seleccionar asunto">
+                                      <option disabled selected>Selecciona una opción</option>
+                                      <option value="Quiero participar">Quiero participar</option>
+                                      <option value="Quiero saber más">Quiero saber más</option>
+                                      <option value="Soy artista">Soy artista</option>
+                                  </select>
+                                </form>
+                              </p>   
+                              <br> 
+                              <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                  <span class="obligatorio">*</span>
+                                </label>                     
+                                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                              </p>     
+                              <form>
+                                  <div>Deseo recibir promociones y newsletters</div>
+                                  <input type="checkbox" name="aceptar" value="1"/>
+                              </form>               
+                              <br>
+                              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                              <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                              </p>          
+                        </form>
+                  </div>  
+                </div>
+              </div>
+          </article>
+  </div>
+   <div class="contenedorHijo footer">
+      <footer class="footer">
+          <p>Street Art</p>
+          <div class="contFooter">
+              <p>
+                  Copyright © 2022     
+              </p>
+              
+          </div>
+      </footer>
+  </div>
+</body>

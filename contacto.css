@@ -1,0 +1,322 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo{
+  color: rgb(88, 88, 88);
+  font-family: 'Anton', sans-serif; sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/*FORMULARIO*/
+
+.centrado{
+  display: flex;
+  align-items: center;
+}
+.contact_form{  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #4948b9; 
+    color: white;
+    padding-left: 30px; 
+  }
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: rgb(255, 255, 255); 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 10px; 
+  }
+
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    box-shadow: inset #5c5c5c 2px 2px;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px;  
+    width: 50%; 
+    cursor: pointer;
+  }
+  
+  button p{
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+  }
+  
+  span{
+    color: rgb(255, 9, 202); 
+  }
+  h3{
+    color: white;
+  }
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+    ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+   
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+/*----------------------------------------*/
+
+
+.genero{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------------
+------------------------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contenedorPadre{
+  width: 100%;
+  margin: auto;
+  background-image: linear-gradient(360deg, #9c9c9c 0%, #ffffff 74%);
+  display: grid;
+  grid-column: repeat(4, 1fr);
+  grid-row: repeat(4, auto);
+  grid-template-areas:
+  "header header header header"
+  "navbar navbar navbar navbar"
+  "main main aside aside"
+  "footer footer footer footer";
+}
+/*HEADER*/
+
+.header{
+  grid-area: header;
+}
+.contenedor img{
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+/*-------------------------------------------*/
+
+/*MENU*/
+
+.navbar{
+  grid-area: navbar;
+  background-color: rgb(116, 187, 76);
+}
+.navegacion{
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  background: rgb(65, 65, 65);
+  text-decoration: none;
+}
+.menu{
+ max-width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ list-style: none;
+}
+.menu li a{
+  font-size: 16px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(189, 189, 189);
+}
+
+/*-------------------------------------------*/
+
+/*CUERPO*/
+
+.main{
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-family: 'Prompt', sans-serif;
+}
+.titulo{
+  color: rgb(88, 88, 88);
+  font-family: 'Anton', sans-serif; sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.firma img{
+  max-width: 80%;
+}
+.aside{
+  margin-top: 90px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  grid-area: aside;
+  height: auto;
+}
+.iframe{
+  border: 8px inset #717e86;
+  width: auto;
+  height: auto;
+}
+
+/*----------------------------------*/
+
+/*FOOTER*/
+
+.footer{
+  background-color: rgb(0, 0, 0); 
+  grid-area: footer;
+  height: auto;
+  height: 90px;
+}
+.footer{
+  grid-area: footer;
+  width: 100%;
+  height: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: left;
+  position: relative;
+}
+.footer > p{
+padding-left: 40px;
+padding-top: 15px;
+padding-bottom: 40px;
+font-size: 35px;
+}
+.contFooter{
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+
+/*-------------------------------------------*/
+
+
+  /*RESPONSIVE*/
+@media screen and (max-width:600px){
+  .contenedorPadre{
+      display: grid;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      grid-template-columns: 2fr;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+          "header" 
+          "navbar"
+          "main" 
+          "aside"
+          "footer";
+  }
+  /*MENU*/
+  .menu{
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      list-style: none;
+  }
+
+  /*CUERPO*/
+
+  .main{
+      grid-area: main;
+      height: auto;
+      width: 100%;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-bottom: 0px;
+      font-family: 'Prompt', sans-serif;
+  }
+  .aside{
+      padding-top: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+      grid-area: aside;
+      height: auto;
+      align-items: center;
+      margin-left: auto;
+  }
+  .iframe{
+      border: 4px inset #717e86;
+      width: 100%;
+      height: auto;
+      align-items: center;
+  }
+  .footer > p{
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 40px;
+      font-size: 25px;
+  }
+}
+  /*------------------------------------------*/
