@@ -63,6 +63,7 @@
 .menu li a:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(189, 189, 189);
+    transform: scale(1.2,1.2);
 }
 
 /*-------------------------------------------*/
