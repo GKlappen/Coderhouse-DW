@@ -157,9 +157,6 @@
 
 /*MENU*/
 
-.nav nav-pills{
-  background-color: #97d848;
-}
 .navbar{
   grid-area: navbar;
   background-color: rgb(236, 236, 236);
