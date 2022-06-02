@@ -34,9 +34,15 @@
 
 /*MENU*/
 
+.nav-link {
+    background-color: #10b110;
+    color: #FFF;
+}
+  
+
 .navbar{
     grid-area: navbar;
-    background-color: rgb(116, 187, 76);
+    background-color: rgb(236, 236, 236);
 }
 .navegacion{
     width: 100%;
