@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-
-.contenedorPadre{
-    width: 100%;
-    margin: auto;
-    background-image: linear-gradient(360deg, #9c9c9c 0%, #ffffff 74%);
-    display: grid;
-    grid-column: repeat(4, 1fr);
-    grid-row: repeat(4, auto);
-    grid-template-areas:
-    "header header header header"
-    "navbar navbar navbar navbar"
-    "main main main main"
-    "footer footer footer footer";
-}
 /*HEADER*/
 
 .header{
@@ -65,11 +51,23 @@
     background-color: rgb(189, 189, 189);
     transform: scale(1.2,1.2);
 }
-
 /*-------------------------------------------*/
 
-/*CUERPO*/
 
+/*CUERPO*/
+.contenedorPadre{
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(360deg, #9c9c9c 0%, #ffffff 74%);
+    display: grid;
+    grid-column: repeat(4, 1fr);
+    grid-row: repeat(4, auto);
+    grid-template-areas:
+    "header header header header"
+    "navbar navbar navbar navbar"
+    "main main main main"
+    "footer footer footer footer";
+}
 .main{
     grid-area: main;
     height: auto;
@@ -110,11 +108,10 @@
     margin-top: 15px;
     font-weight: bold;
 }
-
 /*----------------------------------*/
 
-/*FOOTER*/
 
+/*FOOTER*/
 .footer{
     background-color: rgb(0, 0, 0); 
     grid-area: footer;
@@ -142,11 +139,10 @@ font-size: 35px;
     color: white;
     padding-bottom: 10px;
 }
-
 /*-------------------------------------------*/
 
-
-    /*RESPONSIVE*/
+  
+/*RESPONSIVE*/
 @media screen and (max-width:600px){
     .contenedorPadre{
         display: grid;
@@ -170,9 +166,7 @@ font-size: 35px;
         text-align: center;
         list-style: none;
     }
-
     /*CUERPO*/
-
     .main{
         grid-area: main;
         height: auto;
@@ -198,4 +192,4 @@ font-size: 35px;
         font-size: 25px;
     }
 }
-    /*------------------------------------------*/
+/*------------------------------------------*/
