@@ -103,7 +103,7 @@
 .footer > p{
 padding-left: 40px;
 padding-top: 15px;
-padding-bottom: 40px;
+padding-bottom: 20px;
 font-size: 35px;
 }
 .contFooter{
@@ -160,7 +160,7 @@ font-size: 35px;
     .iframe{
         border: 4px inset #717e86;
         width: 100%;
-        height: auto;
+        height: 100%;
         align-items: center;
     }
     .footer > p{
