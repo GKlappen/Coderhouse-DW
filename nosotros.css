@@ -109,7 +109,7 @@
 .footer > p{
 padding-left: 40px;
 padding-top: 15px;
-padding-bottom: 20px;
+padding-bottom: 10px;
 font-size: 35px;
 }
 .contFooter{
@@ -172,7 +172,7 @@ font-size: 35px;
     .footer > p{
         padding-left: 20px;
         padding-top: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
         font-size: 25px;
     }
 }

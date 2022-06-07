@@ -22,7 +22,6 @@
 /*MENU*/
 .navbar{
     grid-area: navbar;
-    background-color: rgb(236, 236, 236);
 }
 .navegacion{
     width: 100%;
@@ -30,26 +29,6 @@
     border: 0px;
     background: rgb(65, 65, 65);
     text-decoration: none;
-}
-.menu{
-   max-width: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   list-style: none;
-}
-.menu li a{
-    font-size: 16px;
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.menu li a:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(189, 189, 189);
-    transform: scale(1.2,1.2);
 }
 /*-------------------------------------------*/
 
