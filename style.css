@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*HEADER*/
 .header{
     grid-area: header;
@@ -56,6 +57,27 @@
     padding-bottom: 30px;
     font-family: 'Prompt', sans-serif;
 }
+.grid-container{
+    padding: 0;
+    display: grid;
+    grid-column: repeat(5, auto);
+    grid-row: auto;
+    grid-template-areas:
+    "gridimg gridimg gridimg gridimg gridimg"
+    ;
+}
+.gridimg{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gridimg img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
 .titulo{
     color: rgb(88, 88, 88);
     font-family: 'Anton', sans-serif; sans-serif;
@@ -63,6 +85,13 @@
     margin-bottom: 30px;
     margin-top: 15px;
     font-weight: bold;
+}
+.card {
+    margin: 10px;
+}
+.firma{
+    display: flex;
+    justify-content: center;
 }
 .firma img{
     max-width: 80%;
@@ -146,6 +175,16 @@ font-size: 35px;
         padding-left: 30px;
         padding-bottom: 0px;
         font-family: 'Prompt', sans-serif;
+    }
+    .grid-container{
+        padding: 0;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: auto;
+        margin-bottom: 10px;
+        grid-template-areas:
+        "gridimg"
+        ;
     }
     .aside{
         padding-top: 0px;
