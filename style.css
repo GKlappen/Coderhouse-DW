@@ -96,6 +96,14 @@
 .firma img{
     max-width: 80%;
 }
+}
+.botonMuro a{
+    align-items: center;
+}
+.muro {
+    align-items: center;
+    background-color: red;
+}
 .aside{
     margin-top: 90px;
     padding-right: 15px;

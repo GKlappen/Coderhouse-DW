@@ -184,8 +184,11 @@
   margin-top: 15px;
   font-weight: bold;
 }
-.firma img{
-  max-width: 80%;
+.firma {
+  width: 80%;
+}
+.botonMuro{
+
 }
 .aside{
   margin-top: 90px;
