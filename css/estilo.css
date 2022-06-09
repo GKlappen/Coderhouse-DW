@@ -1,0 +1,27 @@
+/*COLORS*/
+/*PROPERTIES*/
+body article h1 {
+  color: blue;
+  padding: 20px; }
+
+body article h2 {
+  color: #3f663f;
+  padding: 20px; }
+
+body article h3 {
+  color: #53a8bd;
+  padding: 20px; }
+
+body article h5 {
+  color: red;
+  padding: 20px; }
+
+body article h6 {
+  color: orange;
+  padding: 20px; }
+
+body article .muro {
+  /*background-color: $bkcolor;*/
+  display: flex;
+  align-items: center;
+  justify-content: center; }

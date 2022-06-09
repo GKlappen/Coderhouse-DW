@@ -1,0 +1,42 @@
+/*COLORS*/
+$blue: blue;
+$lightb: rgb(83, 168, 189);
+$green: rgb(63, 102, 63);
+$red: red;
+$orange: orange;
+$bkcolor: black;
+
+/*PROPERTIES*/
+$padd: 20px;
+
+body{
+    article{
+        h1{
+            color: $blue;
+            padding: $padd;
+        }
+        h2 {
+            color: $green;
+            padding: $padd;
+        }
+        h3 {
+            color: $lightb;
+            padding: $padd;
+        }
+        h5{
+            color: $red;
+            padding: $padd;
+        }
+        h6{
+            color: $orange;
+            padding: $padd;
+        }
+        .muro{
+            /*background-color: $bkcolor;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
