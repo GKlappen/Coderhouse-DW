@@ -5,6 +5,31 @@ $green: rgb(63, 102, 63);
 $red: red;
 $orange: orange;
 $bkcolor: black;
+$bggrey: rgb(194, 194, 194);
+$bgred: rgb(194, 71, 71);
+
+@mixin prueba ($bggrey){
+    background-color: $bggrey;
+    border-radius: 50%;
+    margin: 20px;
+}
+.fondogrey{
+    @include prueba ($bggrey);
+}
+.fondored{
+    @include prueba ($bgred);
+}
+.fondolb{
+    @include prueba ($lightb);
+}
+.fondobk{
+    @include prueba ($bkcolor);
+}
+
+.text{
+    text-shadow: 1px 1px black;
+    text-decoration: underline;
+}
 
 /*PROPERTIES*/
 $padd: 20px;
@@ -12,27 +37,32 @@ $padd: 20px;
 body{
     article{
         h1{
+            @extend .fondogrey;
             color: $blue;
             padding: $padd;
         }
         h2 {
+            @extend .text;
             color: $green;
             padding: $padd;
         }
         h3 {
+            @extend .fondored;
             color: $lightb;
             padding: $padd;
         }
         h5{
+            @extend .fondolb;
             color: $red;
             padding: $padd;
         }
         h6{
+            @extend .fondobk;
             color: $orange;
             padding: $padd;
         }
         .muro{
-            /*background-color: $bkcolor;*/
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
