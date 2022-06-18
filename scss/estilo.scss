@@ -1,12 +1,6 @@
 /*COLORS*/
-$blue: blue;
-$lightb: rgb(83, 168, 189);
-$green: rgb(63, 102, 63);
-$red: red;
-$orange: orange;
 $bkcolor: black;
-$bggrey: rgb(194, 194, 194);
-$bgred: rgb(194, 71, 71);
+$bggrey: rgb(88, 88, 88);
 
 @mixin prueba ($bggrey){
     background-color: $bggrey;
@@ -16,57 +10,214 @@ $bgred: rgb(194, 71, 71);
 .fondogrey{
     @include prueba ($bggrey);
 }
-.fondored{
-    @include prueba ($bgred);
-}
-.fondolb{
-    @include prueba ($lightb);
-}
 .fondobk{
     @include prueba ($bkcolor);
 }
 
-.text{
-    text-shadow: 1px 1px black;
-    text-decoration: underline;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*PROPERTIES*/
-$padd: 20px;
 
-body{
-    article{
-        h1{
-            @extend .fondogrey;
-            color: $blue;
-            padding: $padd;
-        }
-        h2 {
-            @extend .text;
-            color: $green;
-            padding: $padd;
-        }
-        h3 {
-            @extend .fondored;
-            color: $lightb;
-            padding: $padd;
-        }
-        h5{
-            @extend .fondolb;
-            color: $red;
-            padding: $padd;
-        }
-        h6{
-            @extend .fondobk;
-            color: $orange;
-            padding: $padd;
-        }
-        .muro{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+/*HEADER*/
+.header{
+    grid-area: header;
+}
+.contenedor{
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
     }
 }
 
+/*MENU*/
+.navbar{
+    grid-area: navbar;
+}
+.navegacion{
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    background: rgb(65, 65, 65);
+    text-decoration: none;
+}
+
+/*CUERPO*/
+.contenedorPadre{
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(360deg, #9c9c9c 0%, #ffffff 74%);
+    display: grid;
+    grid-column: repeat(4, 1fr);
+    grid-row: repeat(4, auto);
+    grid-template-areas:
+    "header header header header"
+    "navbar navbar navbar navbar"
+    "main main aside aside"
+    "footer footer footer footer";
+}
+.main{
+    grid-area: main;
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: 'Prompt', sans-serif;
+}
+.grid-container{
+    padding: 0;
+    display: grid;
+    grid-column: repeat(5, auto);
+    grid-row: auto;
+    grid-template-areas:
+    "gridimg gridimg gridimg gridimg gridimg"
+    ;
+}
+.gridimg{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+}
+.titulo{
+    color: rgb(88, 88, 88);
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.card {
+    margin: 10px;
+}
+.firma{
+    display: flex;
+    justify-content: center;
+    img{
+        max-width: 70%;
+    }
+}
+.aside{
+    margin-top: 90px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    grid-area: aside;
+    height: auto;
+}
+.iframe{
+    border: 8px inset #717e86;
+    width: auto;
+    height: auto;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: rgb(0, 0, 0); 
+    grid-area: footer;
+    height: auto;
+    height: 90px;
+}
+.footer{
+    grid-area: footer;
+    width: 100%;
+    height: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+.footer{  
+    p{
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    }
+}
+.contFooter{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:600px){
+    .contenedorPadre{
+        display: grid;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "header" 
+            "navbar"
+            "main" 
+            "aside"
+            "footer";
+    }
+    /*MENU*/
+    .menu{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+    }
+    /*CUERPO*/
+    .main{
+        grid-area: main;
+        height: auto;
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 0px;
+        font-family: 'Prompt', sans-serif;
+    }
+    .grid-container{
+        padding: 0;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: auto;
+        margin-bottom: 10px;
+        grid-template-areas:
+        "gridimg"
+        ;
+    }
+    .aside{
+        padding-top: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-area: aside;
+        height: auto;
+        align-items: center;
+        margin-left: auto;
+    }
+    .iframe{
+        border: 4px inset #717e86;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .footer {
+        p{
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        }
+    }    
+}
