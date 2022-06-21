@@ -1,6 +1,7 @@
 /*COLORS*/
 $bkcolor: black;
 $bggrey: rgb(88, 88, 88);
+$bgwhite: white;
 
 @mixin prueba ($bggrey){
     background-color: $bggrey;
@@ -120,6 +121,35 @@ $bggrey: rgb(88, 88, 88);
     border: 8px inset #717e86;
     width: auto;
     height: auto;
+}
+.formularioN h2{
+    color: $bgwhite;
+}
+.formularioN h5{
+    color: $bgwhite;
+}
+.formularioN h6{
+    color: $bgwhite;
+}
+.form-check{
+    color: $bgwhite;
+}
+label{
+    color: $bgwhite;
+}
+.centrado{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formularioN{
+    background-color: #4948b9;
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+    padding: 30px;
 }
 
 /*FOOTER*/

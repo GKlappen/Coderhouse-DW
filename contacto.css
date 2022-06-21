@@ -94,7 +94,7 @@ label{
   grid-template-areas:
   "header header header header"
   "navbar navbar navbar navbar"
-  "main main aside aside"
+  "main main main main"
   "footer footer footer footer";
 }
 .main{

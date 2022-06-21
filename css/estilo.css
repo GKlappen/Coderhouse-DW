@@ -102,6 +102,35 @@
   width: auto;
   height: auto; }
 
+.formularioN h2 {
+  color: white; }
+
+.formularioN h5 {
+  color: white; }
+
+.formularioN h6 {
+  color: white; }
+
+.form-check {
+  color: white; }
+
+label {
+  color: white; }
+
+.centrado {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.formularioN {
+  background-color: #4948b9;
+  height: auto;
+  width: 500px;
+  border-radius: 20px;
+  padding: 30px; }
+
 /*FOOTER*/
 .footer {
   background-color: black;
