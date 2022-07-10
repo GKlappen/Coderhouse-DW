@@ -38,6 +38,7 @@
   color: white;
 }
 .formularioN h6{
+  padding: 10px;
   color: white;
 }
 .form-check{
@@ -46,13 +47,10 @@
 label{
   color: white;
 }
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.form-group{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 
 /*HEADER*/
 .header{
@@ -114,9 +112,6 @@ label{
   margin-bottom: 30px;
   margin-top: 15px;
   font-weight: bold;
-}
-.firma {
-  width: 80%;
 }
 .aside{
   margin-top: 90px;

@@ -25,6 +25,13 @@
   padding: 0px;
   border: 0px; }
 
+.separador img {
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+  padding-bottom: 20px;
+  border: 0px; }
+
 /*MENU*/
 .navbar {
   grid-area: navbar; }
@@ -33,7 +40,7 @@
   width: 100%;
   margin: 0px;
   border: 0px;
-  background: #414141;
+  background: #585858;
   text-decoration: none; }
 
 /*CUERPO*/
@@ -81,6 +88,15 @@
   margin-top: 15px;
   font-weight: bold; }
 
+.titulo2 {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+  background-color: black; }
+
 .card {
   margin: 10px; }
 
@@ -100,7 +116,8 @@
 .iframe {
   border: 8px inset #717e86;
   width: auto;
-  height: auto; }
+  height: auto;
+  margin-bottom: 30px; }
 
 .formularioN h2 {
   color: white; }
